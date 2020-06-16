@@ -506,25 +506,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7319929147483038826}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &459573761 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9181612050186922812, guid: 5e931ba228bf3ff4f8a7144650713471,
-    type: 3}
-  m_PrefabInstance: {fileID: 9181612050503223570}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &459573767
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 459573761}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.99999994, y: 1.0000837, z: 0.99999994}
-  m_Center: {x: -0.49999997, y: 0.50004184, z: 0}
 --- !u!1 &497087374
 GameObject:
   m_ObjectHideFlags: 0
@@ -2704,6 +2685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3277300368458463219}
   - component: {fileID: 8053521103824895830}
+  - component: {fileID: 3983822363506746960}
   m_Layer: 0
   m_Name: _ColourMan
   m_TagString: Untagged
@@ -2711,6 +2693,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3983822363506746960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3983822363506746959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9869ac6fa6f13045898413719e17d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrayOfBaskets: []
+  colourMats:
+  - {fileID: 2100000, guid: 17f60492f3603f940ad7c245dac4bec6, type: 2}
+  - {fileID: 2100000, guid: cd5000cefbe22214dad4f8166dd25bae, type: 2}
+  - {fileID: 2100000, guid: f48845c094359654689abf823e2ff95e, type: 2}
+  colourMatsStored: []
 --- !u!4 &6149904454617030128
 Transform:
   m_ObjectHideFlags: 0
@@ -2777,9 +2777,9 @@ MonoBehaviour:
   ballCount: 0
   grapePrefab: {fileID: 3217884476025266475, guid: c6d77ff824d80e54db7a3956ba3ba463,
     type: 3}
-  applePrefab: {fileID: 3217884476025266475, guid: 6b4e944d44c07704e89ee11f9f8bf8cf,
+  applePrefab: {fileID: 3217884476025266475, guid: 9de0c86e4db1231429bc57ce02b14922,
     type: 3}
-  dFruitPrefab: {fileID: 3217884476025266475, guid: 7eba12aa812de244881b3123d4c89c95,
+  dFruitPrefab: {fileID: 3217884476025266475, guid: 2ee81780464ccae4fa23c5a67e5a653b,
     type: 3}
 --- !u!114 &6149904454677524136
 MonoBehaviour:
@@ -3395,11 +3395,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fb795a83c186bf40b253387fb7cb481, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrayOfBaskets: []
-  colourMats:
-  - {fileID: 2100000, guid: 3fc89887dd044d84a8f9a19ae2557688, type: 2}
-  - {fileID: 2100000, guid: 46db459960ef68f4cb52e2000ef48464, type: 2}
-  - {fileID: 2100000, guid: 2f79dc8a8a95d2049933bbf1b8ac3268, type: 2}
 --- !u!1001 &9181612050503223570
 PrefabInstance:
   m_ObjectHideFlags: 0

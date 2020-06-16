@@ -18,6 +18,8 @@ public class GameMan : MonoBehaviour
     public int ballMax, ballCount;
     public GameObject grapePrefab, applePrefab, dFruitPrefab;
 
+
+
     //SINGLETONS
     private static GameMan instance;
     public static GameMan Instance { get { return instance; } }
@@ -42,6 +44,7 @@ public class GameMan : MonoBehaviour
         ballCount = ballMax; //Sets ball counter to the maximum on boot
         UIManager.Instance.PrintUI("Reset!");
         if (ballList.Count > 0) { foreach (GameObject obj in ballList) { Destroy(obj); } } //Destroys all balls in play...
+
         NewBall(); //And spawns a new one
         
     }
@@ -93,12 +96,12 @@ public class GameMan : MonoBehaviour
 
     private void AssignFruitPrefab()
     {
-        int randomColour = Random.Range(0, FindObjectOfType<ColourManager>().arrayOfBaskets.Length);
-        Material basketMaterial = FindObjectOfType<ColourManager>().arrayOfBaskets[randomColour].transform.GetChild(0).GetComponent<Renderer>().sharedMaterial;
+        int randomColour = Random.Range(0, ColourManager.Instance.arrayOfBaskets.Length);
+        Material basketMaterial = ColourManager.Instance.arrayOfBaskets[randomColour].transform.GetChild(0).GetComponent<Renderer>().sharedMaterial;
 
-        Material appleMaterial = FindObjectOfType<ColourManager>().colourMats[0];
-        Material grapesMaterial = FindObjectOfType<ColourManager>().colourMats[1];
-        Material dFruitMaterial = FindObjectOfType<ColourManager>().colourMats[2];
+        Material appleMaterial = ColourManager.Instance.colourMatsStored[0];
+        Material grapesMaterial = ColourManager.Instance.colourMatsStored[1];
+        Material dFruitMaterial = ColourManager.Instance.colourMatsStored[2];
 
         if (basketMaterial == appleMaterial)
         {
@@ -116,8 +119,10 @@ public class GameMan : MonoBehaviour
         //fruits array[i].GetChild(0).getCompoenent<Renderer>().sharedMaterial == colourMat[0])
     }
 
+    
     void Start()
     {
+        new WaitForFixedUpdate();
         Restart(); //Reset to initialize game values
     }
 

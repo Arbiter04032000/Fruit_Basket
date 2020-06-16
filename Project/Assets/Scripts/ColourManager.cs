@@ -8,7 +8,7 @@ public class ColourManager : MonoBehaviour
     public GameObject[] arrayOfBaskets;
     
     //  reference to materials
-    public List<Material> colourMats;
+    public List<Material> colourMats, colourMatsStored;
 
     //  generates random number from 1-3
     private int randomNumber;
@@ -19,8 +19,30 @@ public class ColourManager : MonoBehaviour
     /// Implemented to Assign Colour to baskets at the beginning of each round
     /// </summary>
 
+    //Singleton
+    private static ColourManager instance;
+    public static ColourManager Instance { get { return instance;  } }
+
+    void Awake()
+    {
+        instance = this;
+        //Populates storage list with main list
+        //colourMatsStored = colourMats;
+        foreach(Material mat in colourMats)
+        {
+            colourMatsStored.Add(mat);
+        }
+    }
+
     private void fillBaskets()
     {
+        //Repopulates main list from storage
+        //colourMats = colourMatsStored;
+        foreach (Material mat in colourMatsStored)
+        {
+            colourMats.Add(mat);
+        }
+
         //  fill arrayOfBaskets
         arrayOfBaskets = GameObject.FindGameObjectsWithTag("Basket");
 
