@@ -5,11 +5,10 @@ using UnityEngine;
 public class ColourManager : MonoBehaviour
 {
     //  reference to baskets
-    private GameObject[] arrayOfBaskets;
+    public GameObject[] arrayOfBaskets;
     
-    [SerializeField]
     //  reference to materials
-    private List<Material> colourMats;
+    public List<Material> colourMats;
 
     //  generates random number from 1-3
     private int randomNumber;
@@ -62,10 +61,18 @@ public class ColourManager : MonoBehaviour
         }
     }
 
+    void assignPrefab()
+    {
+        //if(gameObject.transform.GetChild(0).GetComponent<Renderer>().sharedMaterial == )
+        {
+
+        }
+    }
+
     // Update is called once per frame
     void Start()
     {
        fillBaskets();
-       Debug.Log("Pressed P");
+       Debug.Log("Started Game!");
     }
 }

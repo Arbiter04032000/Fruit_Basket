@@ -16,6 +16,7 @@ public class GameMan : MonoBehaviour
     public float timeLimit = 10f; //Seconds for forced gameend
     public UnityEvent timeUp;
     public int ballMax, ballCount;
+    public GameObject grapePrefab, applePrefab, dFruitPrefab;
 
     //SINGLETONS
     private static GameMan instance;
@@ -74,6 +75,7 @@ public class GameMan : MonoBehaviour
         UIManager.Instance.UpdateScore();
         if (ballfab && ballSpawn && ballCount > 0)
         {
+            AssignFruitPrefab();
             GameObject newball = Instantiate<GameObject>(ballfab , ballSpawn.position, ballSpawn.rotation, scene.transform); //Spawns ball in holder
             --ballCount; //Ticks down ball counter
             UIManager.Instance.UpdateBall(); //Updates counter in UI
@@ -87,6 +89,31 @@ public class GameMan : MonoBehaviour
             UIManager.Instance.PrintUI("<color=#ff0000ff>Out of balls!</color>");
             return;
         }
+    }
+
+    private void AssignFruitPrefab()
+    {
+        int randomColour = Random.Range(0, FindObjectOfType<ColourManager>().arrayOfBaskets.Length);
+        Material basketMaterial = FindObjectOfType<ColourManager>().arrayOfBaskets[randomColour].transform.GetChild(0).GetComponent<Renderer>().sharedMaterial;
+
+        Material appleMaterial = FindObjectOfType<ColourManager>().colourMats[0];
+        Material grapesMaterial = FindObjectOfType<ColourManager>().colourMats[1];
+        Material dFruitMaterial = FindObjectOfType<ColourManager>().colourMats[2];
+
+        if (basketMaterial == appleMaterial)
+        {
+            ballfab = applePrefab;
+        }
+        else if(basketMaterial == grapesMaterial)
+        {
+            ballfab = grapePrefab;
+        }
+        else if(basketMaterial == dFruitMaterial)
+        {
+            ballfab = dFruitPrefab;
+        }
+
+        //fruits array[i].GetChild(0).getCompoenent<Renderer>().sharedMaterial == colourMat[0])
     }
 
     void Start()
