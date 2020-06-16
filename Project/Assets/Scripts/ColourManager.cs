@@ -28,45 +28,6 @@ public class ColourManager : MonoBehaviour
         //  max limit of colours
         colourMax = arrayOfBaskets.Length / colourMats.Count;
 
-        //for(int i = 0; i < arrayOfBaskets.Length; i++)
-        //{
-
-        //    if (blueMax >= 4)
-        //        while(randomNumber == 0)
-        //        {
-        //            randomNumber = Random.Range(0, colourMats.Count);
-        //            //randomNumber = Random.Range(1, 4);
-        //        }
-        //    else if (redMax >= 4)
-        //        while (randomNumber == 1)
-        //        {
-        //            randomNumber = Random.Range(0, colourMats.Count);
-        //        }
-        //    else if (yellowMax >= 4)
-        //        while (randomNumber == 2)
-        //        {
-        //            randomNumber = Random.Range(0, colourMats.Count);
-        //        }
-        //    randomNumber = Random.Range(0, colourMats.Count);
-
-        //    switch (randomNumber)
-        //    {
-        //        case 0:
-        //            arrayOfBaskets[i].transform.GetChild(0).GetComponent<Renderer>().material = colourMats[randomNumber];
-        //            blueMax++;
-        //            break;
-        //        case 1:
-        //            arrayOfBaskets[i].transform.GetChild(0).GetComponent<Renderer>().material = colourMats[randomNumber];
-        //            redMax++;
-        //            break;
-        //        case 2:
-        //            arrayOfBaskets[i].transform.GetChild(0).GetComponent<Renderer>().material = colourMats[randomNumber];
-        //            yellowMax++;
-        //            break;
-        //    }
-
-        //}
-
         for(int i = 0; i < arrayOfBaskets.Length; i++)
         {
             int randomNumber = Random.Range(0, colourMats.Count);
@@ -82,11 +43,9 @@ public class ColourManager : MonoBehaviour
         {
             for(int j = 0; j < arrayOfBaskets.Length; j++)
             {
-
-                //Debug.Log("Material Name: " + arrayOfBaskets[j].transform.GetChild(0).GetComponent<Renderer>().material);
+                // material of basket chilkd
                 Material childMat = arrayOfBaskets[j].transform.GetChild(0).GetComponent<Renderer>().sharedMaterial;
 
-                // if basket array index                    ==          colour mat index material
                 if(colourMats[i] == childMat)
                 {
                     increment++;
