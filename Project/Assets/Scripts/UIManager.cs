@@ -18,7 +18,7 @@ public class UIManager : MonoBehaviour
     private bool isPaused;
     public GameObject pauseMenu;
     public GameObject gameUI;
-    public GameObject pauseButton;
+    public GameObject pauseButton, ballButton;
 
     //SINGLETON
     private static UIManager instance;
@@ -111,12 +111,14 @@ public class UIManager : MonoBehaviour
             if(noPause == true)
             {
                 pauseButton.SetActive(false); //Disables the unpause button if boolean is true - This is to prevent unpausing after gameend
+                ballButton.SetActive(false);
             }
             return;
         }
         else
         {
             pauseButton.SetActive(true); //Re-enables pause button, for future menu opening - this must happen before entire menu is disabled
+            ballButton.SetActive(true);
             pauseMenu.SetActive(false); //Disables menu
             gameUI.SetActive(true); //Disables game UI
             isPaused = false;

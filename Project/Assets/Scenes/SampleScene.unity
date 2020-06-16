@@ -335,7 +335,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh79056
+  m_Name: pb_Mesh-102012
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -603,7 +603,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh78430
+  m_Name: pb_Mesh-102108
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -760,6 +760,12 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &131417405 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7319929147589157207, guid: 48424a5c4f0f1bc44a48f54d7ca46119,
+    type: 3}
+  m_PrefabInstance: {fileID: 7319929147483038826}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &212846308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -916,7 +922,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh87266
+  m_Name: pb_Mesh-102304
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1085,7 +1091,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh78770
+  m_Name: pb_Mesh-102204
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1281,7 +1287,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh79220
+  m_Name: pb_Mesh-101916
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1456,7 +1462,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh79174
+  m_Name: pb_Mesh-102172
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1719,7 +1725,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh78926
+  m_Name: pb_Mesh-102044
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1882,7 +1888,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh79208
+  m_Name: pb_Mesh-101884
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2045,7 +2051,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh78362
+  m_Name: pb_Mesh-101948
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2542,7 +2548,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896293018}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.73335665, y: -3.485562, z: -0.9009805}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1685659610}
@@ -2601,7 +2607,7 @@ MonoBehaviour:
   ball: {fileID: 1638661403}
   ballfab: {fileID: 3217884476025266475, guid: 700ee528848c2e8489bf8cd68d7ce384, type: 3}
   scene: {fileID: 949581736}
-  timeLimit: 10
+  timeLimit: Infinity
   timeUp:
     m_PersistentCalls:
       m_Calls:
@@ -2958,6 +2964,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 360615545}
   gameUI: {fileID: 1821789473}
   pauseButton: {fileID: 2092028769}
+  ballButton: {fileID: 131417405}
 --- !u!114 &1199375935 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 555896745958656738, guid: 48424a5c4f0f1bc44a48f54d7ca46119,
@@ -3250,7 +3257,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh78382
+  m_Name: pb_Mesh-102140
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3519,7 +3526,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh79276
+  m_Name: pb_Mesh-101980
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3767,7 +3774,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh79248
+  m_Name: pb_Mesh-102076
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4035,7 +4042,7 @@ GameObject:
   - component: {fileID: 1685659610}
   m_Layer: 0
   m_Name: _Man
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4048,7 +4055,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685659609}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.73335665, y: 3.485562, z: 0.9009805}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 896293020}
@@ -4485,7 +4492,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh19720
+  m_Name: pb_Mesh-102636
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5357,6 +5364,11 @@ PrefabInstance:
       propertyPath: m_Text
       value: DEV
       objectReference: {fileID: 0}
+    - target: {fileID: 7319929147523097287, guid: 48424a5c4f0f1bc44a48f54d7ca46119,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Score: 420'
+      objectReference: {fileID: 0}
     - target: {fileID: 7319929147589157205, guid: 48424a5c4f0f1bc44a48f54d7ca46119,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -5422,6 +5434,16 @@ PrefabInstance:
       propertyPath: triggerExitFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 705507994}
+    - target: {fileID: 9181612048918743662, guid: 5e931ba228bf3ff4f8a7144650713471,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9181612048918743662, guid: 5e931ba228bf3ff4f8a7144650713471,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 9181612049528293600, guid: 5e931ba228bf3ff4f8a7144650713471,
         type: 3}
       propertyPath: m_LocalPosition.x
