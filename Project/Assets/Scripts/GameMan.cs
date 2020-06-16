@@ -45,6 +45,8 @@ public class GameMan : MonoBehaviour
         UIManager.Instance.PrintUI("Reset!");
         if (ballList.Count > 0) { foreach (GameObject obj in ballList) { Destroy(obj); } } //Destroys all balls in play...
 
+        ColourManager.Instance.fillBaskets();
+
         NewBall(); //And spawns a new one
         
     }

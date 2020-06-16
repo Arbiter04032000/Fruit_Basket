@@ -34,7 +34,7 @@ public class ColourManager : MonoBehaviour
         }
     }
 
-    private void fillBaskets()
+    public void fillBaskets()
     {
         //Repopulates main list from storage
         //colourMats = colourMatsStored;
@@ -91,10 +91,10 @@ public class ColourManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    /*
     void Start()
     {
        fillBaskets();
        Debug.Log("Started Game!");
-    }
+    }*/
 }
