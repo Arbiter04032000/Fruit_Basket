@@ -33,7 +33,7 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(GameMan.Instance.Score.ToString() + " s \n" + Mathf.Floor(GameMan.Instance.ReturnTime).ToString() + " t");
+        //Debug.Log(GameMan.Instance.Score.ToString() + " s \n" + Mathf.Floor(GameMan.Instance.ReturnTime).ToString() + " t");
         printText.text = "Start";
         UpdateScore();
         UpdateBall();
@@ -42,7 +42,7 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(GameMan.Instance.Score.ToString() + " s \n" + Mathf.Floor(GameMan.Instance.ReturnTime).ToString() + " t");
+        //Debug.Log(GameMan.Instance.Score.ToString() + " s \n" + Mathf.Floor(GameMan.Instance.ReturnTime).ToString() + " t");
         //PrintUI(printTextLines.ToString());
         UpdateTimer();
     }
