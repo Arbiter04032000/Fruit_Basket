@@ -7197,7 +7197,7 @@ GameObject:
   - component: {fileID: 6614205565047130137}
   m_Layer: 0
   m_Name: _Hoop
-  m_TagString: Untagged
+  m_TagString: Basket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

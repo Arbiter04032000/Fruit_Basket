@@ -70,7 +70,7 @@ public class ColourManager : MonoBehaviour
         for(int i = 0; i < arrayOfBaskets.Length; i++)
         {
             int randomNumber = Random.Range(0, colourMats.Count);
-            arrayOfBaskets[i].transform.GetChild(0).GetComponent<Renderer>().material = colourMats[randomNumber];
+            arrayOfBaskets[i].transform.GetChild(2).GetComponent<Renderer>().material = colourMats[randomNumber];
             check();
         }
     }
