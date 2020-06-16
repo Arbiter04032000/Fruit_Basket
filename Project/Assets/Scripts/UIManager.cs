@@ -18,6 +18,7 @@ public class UIManager : MonoBehaviour
     private bool isPaused;
     public GameObject pauseMenu;
     public GameObject gameUI;
+    public GameObject pauseButton;
 
     //SINGLETON
     private static UIManager instance;
@@ -46,7 +47,7 @@ public class UIManager : MonoBehaviour
         UpdateTimer();
     }
 
-    //Update all score texts - All texts share format of Text: <val>, where the value output is coloured
+    //Update all score texts - All texts share format of "Text: <color>" + [val] + "</color>"
     public void UpdateScore()
     {
         foreach (Text stext in scoreTextList) stext.text = ("Score: <color=#FFE620ff>" + GameMan.Instance.Score.ToString() + "</color>");
@@ -66,7 +67,7 @@ public class UIManager : MonoBehaviour
     }
 
     
-    public void PrintUI(string text)
+    public void PrintUI(string text) //In-game console, will not be in final version
     {
         if (printText != null)
         {
@@ -97,23 +98,29 @@ public class UIManager : MonoBehaviour
         printTextLines = printTextMaxLines;
     }
 
-    public void Pause()
+    public void Pause(bool noPause)
     {
         if(isPaused == false)
         {
-            pauseMenu.SetActive(true);
-            gameUI.SetActive(false);
-            isPaused = true;
-            Time.timeScale = 0;
+            pauseMenu.SetActive(true); //Activates menu, making it visible and interactive
+            gameUI.SetActive(false); //Disables game UI
+            isPaused = true; //Bool to detect if menu is open
+            Time.timeScale = 0; //0 disables "Time"
             PrintUI("Game paused!");
+
+            if(noPause == true)
+            {
+                pauseButton.SetActive(false); //Disables the unpause button if boolean is true - This is to prevent unpausing after gameend
+            }
             return;
         }
         else
         {
-            pauseMenu.SetActive(false);
-            gameUI.SetActive(true);
+            pauseButton.SetActive(true); //Re-enables pause button, for future menu opening - this must happen before entire menu is disabled
+            pauseMenu.SetActive(false); //Disables menu
+            gameUI.SetActive(true); //Disables game UI
             isPaused = false;
-            Time.timeScale = 1;
+            Time.timeScale = 1; //1 is normal timescale
             PrintUI("Game resumed!");
             return;
         }
@@ -121,6 +128,6 @@ public class UIManager : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit();
+        Application.Quit(); //Oculus does not like this, treats it as a crash
     }
 }
