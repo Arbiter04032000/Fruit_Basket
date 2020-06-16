@@ -56,6 +56,12 @@ public class GameMan : MonoBehaviour
         }
         if (ovrr != true) //If override is off, it treats it like a new ball, without actually spawning a new ball
         {
+            if (ballfab && ballSpawn && ballCount <= 0)
+            {
+                timeUp.Invoke(); //Invokes game end functions
+                UIManager.Instance.PrintUI("<color=#ff0000ff>Out of balls!</color>");
+                return;
+            }
             --ballCount; //Ticks down ball counter
             UIManager.Instance.UpdateBall(); //Updates counter in UI
             ball.GetComponentInChildren<ParticleSystem>().Play(); //Plays particle FX
