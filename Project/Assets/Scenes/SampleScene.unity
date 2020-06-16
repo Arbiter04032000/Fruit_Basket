@@ -3396,7 +3396,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrayOfBaskets: []
-  colourMats: []
+  colourMats:
+  - {fileID: 2100000, guid: 3fc89887dd044d84a8f9a19ae2557688, type: 2}
+  - {fileID: 2100000, guid: 46db459960ef68f4cb52e2000ef48464, type: 2}
+  - {fileID: 2100000, guid: 2f79dc8a8a95d2049933bbf1b8ac3268, type: 2}
 --- !u!1001 &9181612050503223570
 PrefabInstance:
   m_ObjectHideFlags: 0
