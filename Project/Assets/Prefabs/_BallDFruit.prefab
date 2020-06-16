@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 3217884476025266476}
   - component: {fileID: 3217884476025266477}
   m_Layer: 0
-  m_Name: _Ball - Copy (2)
+  m_Name: _BallDFruit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4927,7 +4927,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 0}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5052,7 +5052,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 3a18b29d8540d7d439755b73732926c6, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d415e3e142d07142bfd92dc14138d3c, type: 2}
     - target: {fileID: -927199367670048503, guid: e7b7cbe1e89933d4aacb41ee96c08017,
         type: 3}
       propertyPath: m_Name
