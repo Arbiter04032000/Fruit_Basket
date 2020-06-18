@@ -38,10 +38,10 @@ public class ColourManager : MonoBehaviour
     {
         //Repopulates main list from storage
         //colourMats = colourMatsStored;
-        foreach (Material mat in colourMatsStored)
-        {
-            colourMats.Add(mat);
-        }
+        //foreach (Material mat in colourMatsStored)
+        //{
+        //    colourMats.Add(mat);
+        //}
 
         //  fill arrayOfBaskets
         arrayOfBaskets = GameObject.FindGameObjectsWithTag("Basket");
@@ -82,19 +82,4 @@ public class ColourManager : MonoBehaviour
             increment = 0;
         }
     }
-
-    void assignPrefab()
-    {
-        //if(gameObject.transform.GetChild(0).GetComponent<Renderer>().sharedMaterial == )
-        {
-
-        }
-    }
-
-    /*
-    void Start()
-    {
-       fillBaskets();
-       Debug.Log("Started Game!");
-    }*/
 }
