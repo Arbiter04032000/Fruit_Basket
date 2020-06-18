@@ -10,6 +10,9 @@ public class ColourManager : MonoBehaviour
     //  reference to materials
     public List<Material> colourMats, colourMatsStored;
 
+    //  reference to fruit prefabs
+    public List<GameObject> fruitsArray;
+
     //  generates random number from 1-3
     private int randomNumber;
 
@@ -57,28 +60,58 @@ public class ColourManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Caps the amount of colour_mats assigned to baskets
+    /// By Iterating through colour mat array and basket array.
+    /// Iterating to check if a material is the same on both arrays
+    /// Deleting the material in colour mat array if it appears more than specified
+    /// </summary>
     void check()
     {
         int increment = 0;
+
+        //  iterate through each colour mat
         for(int i = 0; i < colourMats.Count; i++)
         {
+            //  iterate through each basket
             for(int j = 0; j < arrayOfBaskets.Length; j++)
             {
-                // material of basket chilkd
+                // material of basket child
                 Material childMat = arrayOfBaskets[j].transform.GetChild(0).GetComponent<Renderer>().sharedMaterial;
 
+                //  if material matches material of basket
                 if(colourMats[i] == childMat)
                 {
+                    if(i == 0)
+                    {
+                        arrayOfBaskets[j].gameObject.GetComponent<TagContainer>().fruitTag = "Apple";
+                        //arrayOfBaskets[j].GetComponent<TagContainer>().fruitTag = "Apple";
+                    }
+                    else if(i == 1)
+                    {
+                        arrayOfBaskets[j].gameObject.GetComponent<TagContainer>().fruitTag = "Grape";
+                        //arrayOfBaskets[j].GetComponent<TagContainer>().fruitTag = "Grape";
+                    }
+                    else if (i == 2)
+                    {
+                        arrayOfBaskets[j].gameObject.GetComponent<TagContainer>().fruitTag = "DFruit";
+                        //arrayOfBaskets[j].GetComponent<TagContainer>().fruitTag = "DFruit";
+                    }
+
+                    //  add to increment to keep track of
+                    //  amount of same mats
                     increment++;
                 }
             }
 
-            // if the colour appeared 4 times
+            // if the colour mat appeared max amount of times
             if(increment == colourMax)
             {
-                Debug.Log("Incremnet" + increment);
+                //  remove the mat from the list
                 colourMats.RemoveAt(i);
             }
+
+            //  reset increment for next check
             increment = 0;
         }
     }
