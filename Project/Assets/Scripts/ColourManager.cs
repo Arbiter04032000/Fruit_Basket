@@ -51,13 +51,6 @@ public class ColourManager : MonoBehaviour
             colourMatsBeingUsed.Add(mat);
         }
 
-        // For Checking It Is the Correct List
-        //  Print out list index items
-        for(int i = 0; i < colourMatsBeingUsed.Count; i++)
-        {
-            Debug.Log(i + ": " + colourMatsBeingUsed[i].name);
-        }
-
         //  fill arrayOfBaskets
         arrayOfBaskets = GameObject.FindGameObjectsWithTag("Basket");
 
