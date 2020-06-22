@@ -3595,10 +3595,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: cd5000cefbe22214dad4f8166dd25bae, type: 2}
   - {fileID: 2100000, guid: 17f60492f3603f940ad7c245dac4bec6, type: 2}
   colourMatsStored: []
-  fruitsArray:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  defaultMat: {fileID: 2100000, guid: 6d0cbfd9506693043a11cda16c41aa8f, type: 2}
 --- !u!1001 &9181612050503223570
 PrefabInstance:
   m_ObjectHideFlags: 0

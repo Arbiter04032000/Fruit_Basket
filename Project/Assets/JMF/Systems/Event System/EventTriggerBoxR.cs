@@ -17,6 +17,8 @@ namespace JMF.Systems.EventSystem.UnityRenderer
             print("Trigger " + this + " firing");
             triggerEnterFunc.Invoke();
 
+            BasketCheck(other);
+
             //Triggers the disabler, and feeds it useful information
             Disabler(other.GetComponent<Transform>());
         }
@@ -31,7 +33,21 @@ namespace JMF.Systems.EventSystem.UnityRenderer
         {
             //other.transform.GetChild(0).GetComponent<Renderer>().sharedMaterial = 
             Destroy(other.GetComponent<XRGrabInteractable>());
+
+            // disables trigger
             this.gameObject.SetActive(false);
+        }
+
+        //  checks if the basket colour is matching the fruit
+        public void BasketCheck(Collider other)
+        {
+            //  check if basket contains tag of other fruit
+            if (GetComponentInParent<TagContainer>().fruitTag == other.tag)
+            {
+                // Change Both Colour To Gray
+                transform.parent.GetChild(0).GetComponent<Renderer>().material = FindObjectOfType<ColourManager>().defaultMat;
+                other.transform.GetChild(0).GetComponent<Renderer>().material = FindObjectOfType<ColourManager>().defaultMat;
+            }
         }
     }
 }
