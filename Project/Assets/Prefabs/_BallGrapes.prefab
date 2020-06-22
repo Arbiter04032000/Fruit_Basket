@@ -90,7 +90,7 @@ SphereCollider:
   m_GameObject: {fileID: 3217884475972617619}
   m_Material: {fileID: 13400000, guid: e991f321926e8f740a26aa931e0107b9, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 3217884476025266474}
   - component: {fileID: 3217884476025266476}
   - component: {fileID: 3217884476025266477}
+  - component: {fileID: 4305438307567334713}
   m_Layer: 0
   m_Name: _BallGrapes
   m_TagString: Grape
@@ -217,6 +218,19 @@ MonoBehaviour:
   m_ThrowVelocityScale: 5
   m_ThrowAngularVelocityScale: 0.25
   m_GravityOnDetach: 0
+--- !u!135 &4305438307567334713
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3217884476025266475}
+  m_Material: {fileID: 13400000, guid: e991f321926e8f740a26aa931e0107b9, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3999660358647519005
 GameObject:
   m_ObjectHideFlags: 0

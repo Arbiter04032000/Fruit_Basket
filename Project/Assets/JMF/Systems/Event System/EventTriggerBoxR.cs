@@ -16,6 +16,9 @@ namespace JMF.Systems.EventSystem.UnityRenderer
         {
             print("Trigger " + this + " firing");
             triggerEnterFunc.Invoke();
+
+            //Triggers the disabler, and feeds it useful information
+            Disabler(other.GetComponent<Transform>());
         }
 
         public void OnTriggerExit(Collider other)
@@ -23,9 +26,11 @@ namespace JMF.Systems.EventSystem.UnityRenderer
             triggerExitFunc.Invoke();
         }
 
-        public void Disabler(Collider other)
+        //When performed, this disables the Interactable on the other object, and this script
+        public void Disabler(Transform other)
         {
-            other.GetComponent<XRGrabInteractable>().e
+            Destroy(other.GetComponent<XRGrabInteractable>());
+            this.gameObject.SetActive(false);
         }
     }
 }
