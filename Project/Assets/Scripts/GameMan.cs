@@ -91,7 +91,7 @@ public class GameMan : MonoBehaviour
         {
             Debug.Log(ballCount);
             AssignFruitPrefab();
-            GameObject newball = Instantiate<GameObject>(ballfab , ballSpawn.position, ballSpawn.rotation, scene.transform); //Spawns ball in holder
+            GameObject newball = Instantiate<GameObject>(ballfab , ballSpawn.position, Random.rotation, scene.transform); //Spawns ball in holder
             --ballCount; //Ticks down ball counter
             UIManager.Instance.UpdateBall(); //Updates counter in UI
             UIManager.Instance.PrintUI("Balls left: <color=#ff0000ff>" + ballCount.ToString() + "</color>"); //Displays new count
