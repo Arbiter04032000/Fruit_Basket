@@ -29,6 +29,7 @@ namespace JMF.Systems.EventSystem.UnityRenderer
         //When performed, this disables the Interactable on the other object, and this script
         public void Disabler(Transform other)
         {
+            //other.transform.GetChild(0).GetComponent<Renderer>().sharedMaterial = 
             Destroy(other.GetComponent<XRGrabInteractable>());
             this.gameObject.SetActive(false);
         }
