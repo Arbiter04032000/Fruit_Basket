@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 3217884476025266476}
   - component: {fileID: 3217884476025266477}
   - component: {fileID: 2059278658226156406}
+  - component: {fileID: 4706287987134433072}
   m_Layer: 0
   m_Name: _BallApple
   m_TagString: Apple
@@ -177,7 +178,7 @@ MonoBehaviour:
   m_AttachEaseInTime: 0.15
   m_MovementType: 1
   m_TrackPosition: 1
-  m_SmoothPosition: 0
+  m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
   m_TrackRotation: 1
@@ -201,7 +202,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 3.5
+  m_ThrowVelocityScale: 3.3333333
   m_ThrowAngularVelocityScale: 0.25
   m_GravityOnDetach: 0
 --- !u!135 &2059278658226156406
@@ -217,6 +218,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.54
   m_Center: {x: 0, y: -0.04, z: 0}
+--- !u!114 &4706287987134433072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3217884476025266475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4240432aa23086e449e2382e6aded384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitTag: 
+  scored: 0
+  fruitMatUsed: {fileID: 2100000, guid: f81218888f8e796449025b4420d0f335, type: 2}
 --- !u!1 &3999660358647519005
 GameObject:
   m_ObjectHideFlags: 0

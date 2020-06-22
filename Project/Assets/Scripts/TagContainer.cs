@@ -9,4 +9,8 @@ public class TagContainer : MonoBehaviour
 
     //  to check if basket has been scored
     public bool scored;
+
+    //FRUIT ONLY
+    //Stores material for when a fruit is "used"
+    public Material fruitMatUsed;
 }

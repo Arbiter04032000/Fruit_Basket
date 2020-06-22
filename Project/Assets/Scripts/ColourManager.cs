@@ -6,9 +6,9 @@ public class ColourManager : MonoBehaviour
 {
     //  reference to baskets
     public GameObject[] arrayOfBaskets;
-    
-    //  reference to materials
-    public List<Material> colourMats, colourMatsStored;
+
+    //  reference to materials + used fruit mats
+    public List<Material> colourMats, colourMatsStored, fruitUsedMats;
 
     //  default mat + mats for filled baskets
     public Material defaultMat, basketMatGood, basketMatBad;

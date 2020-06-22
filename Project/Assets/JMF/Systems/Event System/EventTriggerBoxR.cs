@@ -41,12 +41,13 @@ namespace JMF.Systems.EventSystem.UnityRenderer
         //  checks if the basket colour is matching the fruit
         public void BasketCheck(Collider other)
         {
+
+            other.transform.GetChild(0).GetComponent<Renderer>().material = other.GetComponent<TagContainer>().fruitMatUsed;
             //  check if basket contains tag of other fruit
             if (GetComponentInParent<TagContainer>().fruitTag == other.tag)
             {
                 // Change Both Colour To Gray
-                transform.parent.GetChild(0).GetComponent<Renderer>().material = FindObjectOfType<ColourManager>().basketMatGood;
-                other.transform.GetChild(0).GetComponent<Renderer>().material = FindObjectOfType<ColourManager>().defaultMat;
+                transform.parent.GetChild(0).GetComponent<Renderer>().material = ColourManager.Instance.basketMatGood;
 
                 // Set Basket to scored
                 GetComponentInParent<TagContainer>().scored = true;
@@ -63,8 +64,7 @@ namespace JMF.Systems.EventSystem.UnityRenderer
             else
             {
                 // Change Both Colour To Gray
-                transform.parent.GetChild(0).GetComponent<Renderer>().material = FindObjectOfType<ColourManager>().basketMatBad;
-                other.transform.GetChild(0).GetComponent<Renderer>().material = FindObjectOfType<ColourManager>().defaultMat;
+                transform.parent.GetChild(0).GetComponent<Renderer>().material = ColourManager.Instance.basketMatBad;
 
                 // Set Basket to scored
                 GetComponentInParent<TagContainer>().scored = true;

@@ -65,6 +65,7 @@ public class GameMan : MonoBehaviour
         {
             ball.SetPositionAndRotation(ballSpawn.position, ballSpawn.rotation); //Reset ball to spawnpoint
             ball.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero; //Reset ball velocity; prevents weirdness
+            ball.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero; //Same as above
             UIManager.Instance.PrintUI("Balls left: <color=#ff0000ff>" + ballCount.ToString() + "</color>"); //Prints ball count to UI
         }
         if (ovrr != true) //If override is off, it treats it like a new ball, without actually spawning a new ball
