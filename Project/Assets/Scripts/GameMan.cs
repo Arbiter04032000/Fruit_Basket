@@ -44,7 +44,7 @@ public class GameMan : MonoBehaviour
         ballCount = ballMax; //Sets ball counter to the maximum on boot
         UIManager.Instance.PrintUI("Reset!");
         if (ballList.Count > 0) { foreach (GameObject obj in ballList) { Destroy(obj); } } //Destroys all balls in play...
-
+        
         ColourManager.Instance.fillBaskets();
 
         NewBall(); //And spawns a new one
@@ -54,7 +54,7 @@ public class GameMan : MonoBehaviour
     public void ResetBall(bool ovrr) //Bool override determines whether reset function should ignore ballcount. TODO make cleaner and more efficient
     {
         UIManager.Instance.UpdateScore();
-        if (ball && ballSpawn)
+        if (ball && ballSpawn && ovrr == true)
         {
             ball.SetPositionAndRotation(ballSpawn.position, ballSpawn.rotation); //Reset ball to spawnpoint
             ball.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero; //Reset ball velocity; prevents weirdness
@@ -68,6 +68,7 @@ public class GameMan : MonoBehaviour
                 UIManager.Instance.PrintUI("<color=#ff0000ff>Out of balls!</color>");
                 return;
             }
+            ball.SetPositionAndRotation(ballSpawn.position, ballSpawn.rotation); //Reset ball to spawnpoint
             --ballCount; //Ticks down ball counter
             UIManager.Instance.UpdateBall(); //Updates counter in UI
             ball.GetComponentInChildren<ParticleSystem>().Play(); //Plays particle FX
@@ -78,8 +79,9 @@ public class GameMan : MonoBehaviour
     public void NewBall() //Function for spawning a new ball, instead of tping the current one
     {
         UIManager.Instance.UpdateScore();
-        if (ballfab && ballSpawn && ballCount > 0)
+        if (ballfab && ballSpawn && ballCount >= 0)
         {
+            Debug.Log(ballCount);
             AssignFruitPrefab();
             GameObject newball = Instantiate<GameObject>(ballfab , ballSpawn.position, ballSpawn.rotation, scene.transform); //Spawns ball in holder
             --ballCount; //Ticks down ball counter
