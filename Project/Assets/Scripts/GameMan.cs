@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using JMF.Systems.EventSystem.UnityRenderer;
 
 public class GameMan : MonoBehaviour
 {
@@ -45,6 +46,11 @@ public class GameMan : MonoBehaviour
         UIManager.Instance.PrintUI("Reset!");
         if (ballList.Count > 0) { foreach (GameObject obj in ballList) { Destroy(obj); } } //Destroys all balls in play...
 
+        //Resets basket trigger
+        foreach (GameObject basket in ColourManager.Instance.arrayOfBaskets)
+        {
+            basket.transform.GetChild(1).gameObject.SetActive(true);
+        }
         // fill baskets with the correct colour
         ColourManager.Instance.fillBaskets();
 

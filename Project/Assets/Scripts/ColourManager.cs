@@ -10,8 +10,8 @@ public class ColourManager : MonoBehaviour
     //  reference to materials
     public List<Material> colourMats, colourMatsStored;
 
-    //  default mat
-    public Material defaultMat;
+    //  default mat + mats for filled baskets
+    public Material defaultMat, basketMatGood, basketMatBad;
 
     //  generates random number from 1-3
     private int randomNumber;
