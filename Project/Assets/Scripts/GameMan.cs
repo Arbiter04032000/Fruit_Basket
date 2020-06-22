@@ -45,6 +45,7 @@ public class GameMan : MonoBehaviour
         UIManager.Instance.PrintUI("Reset!");
         if (ballList.Count > 0) { foreach (GameObject obj in ballList) { Destroy(obj); } } //Destroys all balls in play...
 
+        // fill baskets with the correct colour
         ColourManager.Instance.fillBaskets();
 
         NewBall(); //And spawns a new one
@@ -98,6 +99,14 @@ public class GameMan : MonoBehaviour
         }
     }
 
+
+    /// <summary>
+    /// Assigns the correct prefab of the fruit to the ball holder
+    /// depending on the colour mats stored
+    /// Index 0: Apple
+    /// Index 1: Grape
+    /// Index 2: DFruit
+    /// </summary>
     private void AssignFruitPrefab()
     {
         int randomColour = Random.Range(0, ColourManager.Instance.arrayOfBaskets.Length);
@@ -119,8 +128,39 @@ public class GameMan : MonoBehaviour
         {
             ballfab = dFruitPrefab;
         }
+    }
 
-        //fruits array[i].GetChild(0).getCompoenent<Renderer>().sharedMaterial == colourMat[0])
+    /// <summary>
+    /// Check if all baskets have been scored.
+    /// </summary>
+    public void checkForWin()
+    {
+        //  Store array of baskets
+        GameObject[] arrayOfBaskets = GameObject.FindGameObjectsWithTag("Basket");
+
+        //  to keep track of scored baskets
+        int total = 0;
+
+        //  search through each basket
+        for(int i = 0; i < arrayOfBaskets.Length; i++)
+        {
+            //  check if each basket has been scored
+            if(arrayOfBaskets[i].GetComponent<TagContainer>().scored == true)
+            {
+                //  increment total count
+                total++;
+            }
+        }
+
+        // if total equal to amount of baskets
+        if(total == arrayOfBaskets.Length)
+        {
+            // end game
+            timeUp.Invoke();
+        }
+
+        // reset total for checking again
+        total = 0;
     }
 
     

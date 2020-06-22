@@ -19,10 +19,6 @@ public class ColourManager : MonoBehaviour
     // max limit of one colour being drawn
     private int colourMax;
 
-    /// <summary>
-    /// Implemented to Assign Colour to baskets at the beginning of each round
-    /// </summary>
-
     //Singleton
     private static ColourManager instance;
     public static ColourManager Instance { get { return instance;  } }
@@ -38,18 +34,13 @@ public class ColourManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Implemented to Assign Colour to baskets at the beginning of each round
+    /// </summary>
     public void fillBaskets()
     {
+        //  resets baskets to default mat
         resetBaskets();
-        //Repopulates main list from storage
-        //colourMats = colourMatsStored;
-        //if (colourMats.Count == 0)
-        //{
-        //    foreach (Material mat in colourMatsStored)
-        //    {
-        //        colourMats.Add(mat);
-        //    }
-        //}
 
         //  create list of colour mats that are to be used
         List<Material> colourMatsBeingUsed = new List<Material>();
@@ -75,9 +66,16 @@ public class ColourManager : MonoBehaviour
 
         for(int i = 0; i < arrayOfBaskets.Length; i++)
         {
+            // generate a random number from the colour mats which will count as the index
             int randomNumber = Random.Range(0, colourMatsBeingUsed.Count);
+
+            // Assign the found material from the random number used as index to basket material
             arrayOfBaskets[i].transform.GetChild(0).GetComponent<Renderer>().material = colourMatsBeingUsed[randomNumber];
+
+            // check if the function to assign materials should assign depending on conditions
             check(colourMatsBeingUsed);
+
+            // add relevant tag to the fruit depending on the colour mats listed
             AddRelevantTag();
         }
     }
@@ -122,6 +120,12 @@ public class ColourManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Implemented to look through each position on colour mat stored and assign it the correct tag
+    /// Index 0: Apple
+    /// Index 1: Grape
+    /// Index 2: DFruit
+    /// </summary>
     void AddRelevantTag()
     {
         for(int i = 0; i < colourMatsStored.Count; i++)
@@ -154,6 +158,7 @@ public class ColourManager : MonoBehaviour
         }
     }
 
+    //  adds default mat to each basket
     void resetBaskets()
     {
         //  fill arrayOfBaskets

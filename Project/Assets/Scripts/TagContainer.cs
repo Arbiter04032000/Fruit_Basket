@@ -5,4 +5,6 @@ using UnityEngine;
 public class TagContainer : MonoBehaviour
 {
     public string fruitTag;
+
+    public bool scored;
 }
