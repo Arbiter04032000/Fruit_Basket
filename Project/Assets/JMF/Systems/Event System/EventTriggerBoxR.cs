@@ -45,7 +45,7 @@ namespace JMF.Systems.EventSystem.UnityRenderer
             if (GetComponentInParent<TagContainer>().fruitTag == other.tag)
             {
                 // Change Both Colour To Gray
-                transform.parent.GetChild(0).GetComponent<Renderer>().material = FindObjectOfType<ColourManager>().defaultMat;
+                transform.parent.GetChild(0).GetComponent<Renderer>().material = FindObjectOfType<ColourManager>().basketMatGood;
                 other.transform.GetChild(0).GetComponent<Renderer>().material = FindObjectOfType<ColourManager>().defaultMat;
 
                 // Set Basket to scored
@@ -53,15 +53,17 @@ namespace JMF.Systems.EventSystem.UnityRenderer
 
                 //Increases score by 5
                 GameMan.Instance.Score = 5;
+                UIManager.Instance.UpdateScore();
                 //Gives the player an extra ball
                 GameMan.Instance.ballCount++;
+                UIManager.Instance.UpdateBall();
 
                 return;
             }
             else
             {
                 // Change Both Colour To Gray
-                transform.parent.GetChild(0).GetComponent<Renderer>().material = FindObjectOfType<ColourManager>().defaultMat;
+                transform.parent.GetChild(0).GetComponent<Renderer>().material = FindObjectOfType<ColourManager>().basketMatBad;
                 other.transform.GetChild(0).GetComponent<Renderer>().material = FindObjectOfType<ColourManager>().defaultMat;
 
                 // Set Basket to scored
@@ -69,6 +71,7 @@ namespace JMF.Systems.EventSystem.UnityRenderer
 
                 //Increases score by 1
                 GameMan.Instance.Score = 1;
+                UIManager.Instance.UpdateScore();
 
                 return;
             }
