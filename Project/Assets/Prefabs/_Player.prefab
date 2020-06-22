@@ -553,8 +553,8 @@ LineRenderer:
         inWeight: 0
         outWeight: 0.44388166
       - serializedVersion: 3
-        time: 1.0005894
-        value: 0.5000824
+        time: 1
+        value: 0.5
         inSlope: 0.00031366694
         outSlope: 0.00031366694
         tangentMode: 0
@@ -629,8 +629,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.44388166
     - serializedVersion: 3
-      time: 1.0005894
-      value: 0.5000824
+      time: 1
+      value: 0.5
       inSlope: 0.00031366694
       outSlope: 0.00031366694
       tangentMode: 0

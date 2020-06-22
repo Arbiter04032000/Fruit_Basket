@@ -216,7 +216,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 3.1666667
+  m_ThrowVelocityScale: 3.333333
   m_ThrowAngularVelocityScale: 0.25
   m_GravityOnDetach: 0
 --- !u!136 &8646729834356293791
