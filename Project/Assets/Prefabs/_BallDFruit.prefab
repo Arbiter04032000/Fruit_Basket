@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 3217884476025266474}
   - component: {fileID: 3217884476025266476}
   - component: {fileID: 3217884476025266477}
+  - component: {fileID: 8646729834356293791}
   m_Layer: 0
   m_Name: _BallDFruit
   m_TagString: DFruit
@@ -217,6 +218,20 @@ MonoBehaviour:
   m_ThrowVelocityScale: 5
   m_ThrowAngularVelocityScale: 0.25
   m_GravityOnDetach: 0
+--- !u!136 &8646729834356293791
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3217884476025266475}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.49292025
+  m_Height: 1.3323485
+  m_Direction: 1
+  m_Center: {x: -0.0070797903, y: 0.083472215, z: 0}
 --- !u!1 &3999660358647519005
 GameObject:
   m_ObjectHideFlags: 0
