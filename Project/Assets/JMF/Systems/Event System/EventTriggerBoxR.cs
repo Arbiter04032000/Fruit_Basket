@@ -47,6 +47,24 @@ namespace JMF.Systems.EventSystem.UnityRenderer
                 // Change Both Colour To Gray
                 transform.parent.GetChild(0).GetComponent<Renderer>().material = FindObjectOfType<ColourManager>().defaultMat;
                 other.transform.GetChild(0).GetComponent<Renderer>().material = FindObjectOfType<ColourManager>().defaultMat;
+
+                //Increases score by 5
+                GameMan.Instance.Score = 5;
+                //Gives the player an extra ball
+                GameMan.Instance.ballCount++;
+
+                return;
+            }
+            else
+            {
+                // Change Both Colour To Gray
+                transform.parent.GetChild(0).GetComponent<Renderer>().material = FindObjectOfType<ColourManager>().defaultMat;
+                other.transform.GetChild(0).GetComponent<Renderer>().material = FindObjectOfType<ColourManager>().defaultMat;
+
+                //Increases score by 1
+                GameMan.Instance.Score = 1;
+
+                return;
             }
         }
     }
