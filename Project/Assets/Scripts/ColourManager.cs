@@ -10,12 +10,13 @@ public class ColourManager : MonoBehaviour
     //  reference to materials
     public List<Material> colourMats, colourMatsStored;
 
-    //  reference to fruit prefabs
-    public List<GameObject> fruitsArray;
+    //  default mat
+    public Material defaultMat;
 
     //  generates random number from 1-3
     private int randomNumber;
 
+    // max limit of one colour being drawn
     private int colourMax;
 
     /// <summary>
@@ -39,27 +40,44 @@ public class ColourManager : MonoBehaviour
 
     public void fillBaskets()
     {
+        resetBaskets();
         //Repopulates main list from storage
         //colourMats = colourMatsStored;
-        if (colourMats.Count == 0)
+        //if (colourMats.Count == 0)
+        //{
+        //    foreach (Material mat in colourMatsStored)
+        //    {
+        //        colourMats.Add(mat);
+        //    }
+        //}
+
+        //  create list of colour mats that are to be used
+        List<Material> colourMatsBeingUsed = new List<Material>();
+
+        //  transfer all colour mats materials into the newly created list
+        foreach (Material mat in colourMats)
         {
-            foreach (Material mat in colourMatsStored)
-            {
-                colourMats.Add(mat);
-            }
+            colourMatsBeingUsed.Add(mat);
+        }
+
+        // For Checking It Is the Correct List
+        //  Print out list index items
+        for(int i = 0; i < colourMatsBeingUsed.Count; i++)
+        {
+            Debug.Log(i + ": " + colourMatsBeingUsed[i].name);
         }
 
         //  fill arrayOfBaskets
         arrayOfBaskets = GameObject.FindGameObjectsWithTag("Basket");
 
         //  max limit of colours
-        colourMax = arrayOfBaskets.Length / colourMats.Count;
+        colourMax = arrayOfBaskets.Length / colourMatsBeingUsed.Count;
 
         for(int i = 0; i < arrayOfBaskets.Length; i++)
         {
-            int randomNumber = Random.Range(0, colourMats.Count);
-            arrayOfBaskets[i].transform.GetChild(0).GetComponent<Renderer>().material = colourMats[randomNumber];
-            check();
+            int randomNumber = Random.Range(0, colourMatsBeingUsed.Count);
+            arrayOfBaskets[i].transform.GetChild(0).GetComponent<Renderer>().material = colourMatsBeingUsed[randomNumber];
+            check(colourMatsBeingUsed);
             AddRelevantTag();
         }
     }
@@ -70,12 +88,12 @@ public class ColourManager : MonoBehaviour
     /// Iterating to check if a material is the same on both arrays
     /// Deleting the material in colour mat array if it appears more than specified
     /// </summary>
-    void check()
+    void check(List<Material> colourList)
     {
         int increment = 0;
 
         //  iterate through each colour mat
-        for(int i = 0; i < colourMats.Count; i++)
+        for(int i = 0; i < colourList.Count; i++)
         {
             //  iterate through each basket
             for(int j = 0; j < arrayOfBaskets.Length; j++)
@@ -84,7 +102,7 @@ public class ColourManager : MonoBehaviour
                 Material childMat = arrayOfBaskets[j].transform.GetChild(0).GetComponent<Renderer>().sharedMaterial;
 
                 //  if material matches material of basket
-                if(colourMats[i] == childMat)
+                if(colourList[i] == childMat)
                 {
                     //  add to increment to keep track of
                     //  amount of same mats
@@ -96,7 +114,7 @@ public class ColourManager : MonoBehaviour
             if(increment == colourMax)
             {
                 //  remove the mat from the list
-                colourMats.RemoveAt(i);
+                colourList.RemoveAt(i);
             }
 
             //  reset increment for next check
@@ -136,6 +154,15 @@ public class ColourManager : MonoBehaviour
         }
     }
 
+    void resetBaskets()
+    {
+        //  fill arrayOfBaskets
+        arrayOfBaskets = GameObject.FindGameObjectsWithTag("Basket");
 
+        for(int i = 0; i < arrayOfBaskets.Length; i++)
+        {
+            arrayOfBaskets[i].transform.GetChild(0).GetComponent<Renderer>().material = defaultMat;
+        }
+    }
    
 }
