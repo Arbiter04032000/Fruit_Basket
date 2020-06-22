@@ -41,10 +41,13 @@ public class ColourManager : MonoBehaviour
     {
         //Repopulates main list from storage
         //colourMats = colourMatsStored;
-        //foreach (Material mat in colourMatsStored)
-        //{
-        //    colourMats.Add(mat);
-        //}
+        if (colourMats.Count == 0)
+        {
+            foreach (Material mat in colourMatsStored)
+            {
+                colourMats.Add(mat);
+            }
+        }
 
         //  fill arrayOfBaskets
         arrayOfBaskets = GameObject.FindGameObjectsWithTag("Basket");
