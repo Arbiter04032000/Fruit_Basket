@@ -25,7 +25,7 @@ namespace JMF.Systems.EventSystem.UnityRenderer
 
         public void Disabler(Collider other)
         {
-            other.GetComponent<XRGrabInteractable>().e
+            //other.GetComponent<XRGrabInteractable>().e
         }
     }
 }
