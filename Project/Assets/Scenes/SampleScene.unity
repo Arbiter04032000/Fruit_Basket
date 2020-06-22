@@ -202,6 +202,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
         type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6149904454617030135}
@@ -229,6 +234,42 @@ PrefabInstance:
         type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: NewBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: af92cf431cccd5448ad9775078b39b62,
+        type: 3}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f0430cc14a72f4580c87609ddf717b, type: 3}
@@ -353,6 +394,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
         type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6149904454617030135}
@@ -380,6 +426,42 @@ PrefabInstance:
         type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: NewBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: af92cf431cccd5448ad9775078b39b62,
+        type: 3}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f0430cc14a72f4580c87609ddf717b, type: 3}
@@ -464,6 +546,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
         type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6149904454617030135}
@@ -491,6 +578,42 @@ PrefabInstance:
         type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: NewBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: af92cf431cccd5448ad9775078b39b62,
+        type: 3}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f0430cc14a72f4580c87609ddf717b, type: 3}
@@ -620,6 +743,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
         type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6149904454617030135}
@@ -647,6 +775,42 @@ PrefabInstance:
         type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: NewBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: af92cf431cccd5448ad9775078b39b62,
+        type: 3}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f0430cc14a72f4580c87609ddf717b, type: 3}
@@ -946,6 +1110,7 @@ MonoBehaviour:
   triggerExitFunc:
     m_PersistentCalls:
       m_Calls: []
+  m_other: {fileID: 0}
 --- !u!65 &779162116
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1329,6 +1494,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
         type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6149904454617030135}
@@ -1356,6 +1526,42 @@ PrefabInstance:
         type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: NewBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: af92cf431cccd5448ad9775078b39b62,
+        type: 3}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f0430cc14a72f4580c87609ddf717b, type: 3}
@@ -1434,6 +1640,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
         type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6149904454617030135}
@@ -1461,6 +1672,42 @@ PrefabInstance:
         type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: NewBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: af92cf431cccd5448ad9775078b39b62,
+        type: 3}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f0430cc14a72f4580c87609ddf717b, type: 3}
@@ -1551,6 +1798,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
         type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6149904454617030135}
@@ -1578,6 +1830,42 @@ PrefabInstance:
         type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: NewBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: af92cf431cccd5448ad9775078b39b62,
+        type: 3}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f0430cc14a72f4580c87609ddf717b, type: 3}
@@ -1747,6 +2035,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
         type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6149904454617030135}
@@ -1774,6 +2067,42 @@ PrefabInstance:
         type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: NewBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: af92cf431cccd5448ad9775078b39b62,
+        type: 3}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f0430cc14a72f4580c87609ddf717b, type: 3}
@@ -2017,6 +2346,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
         type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6149904454617030135}
@@ -2044,6 +2378,42 @@ PrefabInstance:
         type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: NewBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: af92cf431cccd5448ad9775078b39b62,
+        type: 3}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f0430cc14a72f4580c87609ddf717b, type: 3}
@@ -2122,6 +2492,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
         type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6149904454617030135}
@@ -2149,6 +2524,42 @@ PrefabInstance:
         type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: NewBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: af92cf431cccd5448ad9775078b39b62,
+        type: 3}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f0430cc14a72f4580c87609ddf717b, type: 3}
@@ -2396,6 +2807,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
         type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6149904454617030135}
@@ -2423,6 +2839,42 @@ PrefabInstance:
         type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: NewBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: af92cf431cccd5448ad9775078b39b62,
+        type: 3}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f0430cc14a72f4580c87609ddf717b, type: 3}
@@ -3071,6 +3523,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
         type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6149904454617030135}
@@ -3098,6 +3555,42 @@ PrefabInstance:
         type: 3}
       propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: NewBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: af92cf431cccd5448ad9775078b39b62,
+        type: 3}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751986971825940336, guid: d3f0430cc14a72f4580c87609ddf717b,
+        type: 3}
+      propertyPath: triggerEnterFunc.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f0430cc14a72f4580c87609ddf717b, type: 3}
@@ -3319,6 +3812,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: c9b12fa4f6684be44b35a7a1d7b8fa19, type: 2}
   - {fileID: 2100000, guid: a80ed5b1fe511fd469d34d5ae0b4ce06, type: 2}
   colourMatsStored: []
+  fruitsArray: []
 --- !u!1001 &9181612050503223570
 PrefabInstance:
   m_ObjectHideFlags: 0

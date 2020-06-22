@@ -57,6 +57,7 @@ public class ColourManager : MonoBehaviour
             int randomNumber = Random.Range(0, colourMats.Count);
             arrayOfBaskets[i].transform.GetChild(0).GetComponent<Renderer>().material = colourMats[randomNumber];
             check();
+            AddRelevantTag();
         }
     }
 
@@ -82,22 +83,6 @@ public class ColourManager : MonoBehaviour
                 //  if material matches material of basket
                 if(colourMats[i] == childMat)
                 {
-                    if(i == 0)
-                    {
-                        arrayOfBaskets[j].gameObject.GetComponent<TagContainer>().fruitTag = "Apple";
-                        //arrayOfBaskets[j].GetComponent<TagContainer>().fruitTag = "Apple";
-                    }
-                    else if(i == 1)
-                    {
-                        arrayOfBaskets[j].gameObject.GetComponent<TagContainer>().fruitTag = "Grape";
-                        //arrayOfBaskets[j].GetComponent<TagContainer>().fruitTag = "Grape";
-                    }
-                    else if (i == 2)
-                    {
-                        arrayOfBaskets[j].gameObject.GetComponent<TagContainer>().fruitTag = "DFruit";
-                        //arrayOfBaskets[j].GetComponent<TagContainer>().fruitTag = "DFruit";
-                    }
-
                     //  add to increment to keep track of
                     //  amount of same mats
                     increment++;
@@ -115,4 +100,39 @@ public class ColourManager : MonoBehaviour
             increment = 0;
         }
     }
+
+    void AddRelevantTag()
+    {
+        for(int i = 0; i < colourMatsStored.Count; i++)
+        {
+            for(int j = 0; j < arrayOfBaskets.Length; j++)
+            {
+                // material of basket child
+                Material childMat = arrayOfBaskets[j].transform.GetChild(0).GetComponent<Renderer>().sharedMaterial;
+
+                //  if colour in colour mats stored index matches mat of basket material
+                if (colourMatsStored[i] == childMat)
+                {
+                    if (i == 0)
+                    {
+                        arrayOfBaskets[j].gameObject.GetComponent<TagContainer>().fruitTag = "Apple";
+                        //arrayOfBaskets[j].GetComponent<TagContainer>().fruitTag = "Apple";
+                    }
+                    if (i == 1)
+                    {
+                        arrayOfBaskets[j].gameObject.GetComponent<TagContainer>().fruitTag = "Grape";
+                        //arrayOfBaskets[j].GetComponent<TagContainer>().fruitTag = "Grape";
+                    }
+                    if (i == 2)
+                    {
+                        arrayOfBaskets[j].gameObject.GetComponent<TagContainer>().fruitTag = "DFruit";
+                        //arrayOfBaskets[j].GetComponent<TagContainer>().fruitTag = "DFruit";
+                    }
+                }
+            }
+        }
+    }
+
+
+   
 }

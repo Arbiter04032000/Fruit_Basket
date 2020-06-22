@@ -9,10 +9,10 @@ namespace JMF.Systems.EventSystem.UnityRenderer
     public class EventTriggerBoxR : MonoBehaviour
     {
         public UnityEvent triggerEnterFunc, triggerExitFunc;
+        public Collider m_other;
 
         public void OnTriggerEnter(Collider other)
         {
-            print("Trigger " + this + " firing");
             triggerEnterFunc.Invoke();
         }
 
