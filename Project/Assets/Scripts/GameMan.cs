@@ -183,8 +183,8 @@ public class GameMan : MonoBehaviour
     
     void Start()
     {
-        new WaitForFixedUpdate();
-        Restart(); //Reset to initialize game values
+        /*new WaitForFixedUpdate();
+        Restart(); //Reset to initialize game values*/
     }
 
     //Timer - constantly ticks up as long as gameend has not been reached

@@ -16,7 +16,7 @@ public class UIManager : MonoBehaviour
     private int printTextLines; //Current # of lines
 
     private bool isPaused;
-    public GameObject pauseMenu;
+    public GameObject pauseMenu, startMenu;
     public GameObject gameUI;
     public GameObject pauseButton, ballButton;
 
@@ -27,7 +27,7 @@ public class UIManager : MonoBehaviour
     void Awake()
     {
         instance = this;
-        isPaused = false;
+        isPaused = true;
     }
 
     // Start is called before the first frame update
@@ -120,6 +120,7 @@ public class UIManager : MonoBehaviour
             pauseButton.SetActive(true); //Re-enables pause button, for future menu opening - this must happen before entire menu is disabled
             ballButton.SetActive(true);
             pauseMenu.SetActive(false); //Disables menu
+            startMenu.SetActive(false);
             gameUI.SetActive(true); //Disables game UI
             isPaused = false;
             Time.timeScale = 1; //1 is normal timescale
