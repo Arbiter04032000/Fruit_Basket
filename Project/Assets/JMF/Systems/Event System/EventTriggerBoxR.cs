@@ -24,18 +24,19 @@ namespace JMF.Systems.EventSystem.UnityRenderer
         public void OnTriggerEnter(Collider other)
         {
             print("Trigger " + this + " firing");
-            triggerEnterFunc.Invoke();
 
 
             if (this.transform.parent.tag == "Basket")
             {
                 BasketCheck(other);
                 particles.SetActive(true);
+                GameMan.Instance.checkForWin();
 
                 //Triggers the disabler, and feeds it useful information
                 Disabler(other.GetComponent<Transform>());
             }
 
+            triggerEnterFunc.Invoke();
         }
 
         public void OnTriggerExit(Collider other)

@@ -104,7 +104,6 @@ public class GameMan : MonoBehaviour
             return;
         }
 
-        checkForWin();
     }
 
 
