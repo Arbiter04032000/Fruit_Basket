@@ -5007,6 +5007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fruitTag: 
   scored: 0
+  fruitMatUsed: {fileID: 0}
 --- !u!1001 &3815676346785796311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5074,10 +5075,25 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 17f60492f3603f940ad7c245dac4bec6, type: 2}
+    - target: {fileID: -1504981713932161579, guid: 262b7ccf07dced744b1a8044a38f1d61,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 262b7ccf07dced744b1a8044a38f1d61,
+        type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 262b7ccf07dced744b1a8044a38f1d61,
         type: 3}
       propertyPath: m_Name
       value: Mesh
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 262b7ccf07dced744b1a8044a38f1d61,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 262b7ccf07dced744b1a8044a38f1d61, type: 3}
