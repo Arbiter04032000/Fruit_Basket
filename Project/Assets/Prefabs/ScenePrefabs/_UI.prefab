@@ -441,21 +441,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: _MenuUI
       objectReference: {fileID: 0}
-    - target: {fileID: 5211364580396497499, guid: 5ca9c4cc18890e34fa8a2dc0b9e2cae9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5211364580679336452, guid: 5ca9c4cc18890e34fa8a2dc0b9e2cae9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5211364582120662849, guid: 5ca9c4cc18890e34fa8a2dc0b9e2cae9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ca9c4cc18890e34fa8a2dc0b9e2cae9, type: 3}
 --- !u!224 &7319929147835263504 stripped
@@ -471,41 +456,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7319929146378368431}
     m_Modifications:
-    - target: {fileID: 293030487839295893, guid: 7f74cd9ba7501d544b94a1d2aa4372d2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 293030487839295893, guid: 7f74cd9ba7501d544b94a1d2aa4372d2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 293030487839295893, guid: 7f74cd9ba7501d544b94a1d2aa4372d2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 293030487839295893, guid: 7f74cd9ba7501d544b94a1d2aa4372d2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 293030487839295893, guid: 7f74cd9ba7501d544b94a1d2aa4372d2,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 293030487839295893, guid: 7f74cd9ba7501d544b94a1d2aa4372d2,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 293030487839295894, guid: 7f74cd9ba7501d544b94a1d2aa4372d2,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 293030487866267917, guid: 7f74cd9ba7501d544b94a1d2aa4372d2,
         type: 3}
       propertyPath: m_Name

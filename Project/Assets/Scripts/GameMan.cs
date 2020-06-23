@@ -30,7 +30,6 @@ public class GameMan : MonoBehaviour
     {
         instance = this;
         ballList = new List<GameObject>();
-        
     }
 
     
@@ -104,6 +103,8 @@ public class GameMan : MonoBehaviour
             UIManager.Instance.PrintUI("<color=#ff0000ff>Out of balls!</color>");
             return;
         }
+
+        checkForWin();
     }
 
 
@@ -117,6 +118,7 @@ public class GameMan : MonoBehaviour
     private void AssignFruitPrefab()
     {
         int randomColour = Random.Range(0, ColourManager.Instance.arrayOfBaskets.Length);
+        //Debug.Log("RC" + randomColour);
         Material basketMaterial = ColourManager.Instance.arrayOfBaskets[randomColour].transform.GetChild(0).GetComponent<Renderer>().sharedMaterial;
 
         Material appleMaterial = ColourManager.Instance.colourMatsStored[0];
@@ -159,8 +161,11 @@ public class GameMan : MonoBehaviour
             }
         }
 
+
+        //Debug.Log("Baskets " + total);
+
         // if total equal to amount of baskets
-        if(total == arrayOfBaskets.Length)
+        if (total == arrayOfBaskets.Length - 1)
         {
             // end game
             timeUp.Invoke();

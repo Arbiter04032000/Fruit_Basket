@@ -11,16 +11,31 @@ namespace JMF.Systems.EventSystem.UnityRenderer
     public class EventTriggerBoxR : MonoBehaviour
     {
         public UnityEvent triggerEnterFunc, triggerExitFunc;
+        private GameObject particles;
+
+        private void Awake()
+        {
+            if (this.transform.parent.tag == "Basket")
+            {
+                particles = this.transform.parent.GetChild(2).gameObject;
+            }
+        }
 
         public void OnTriggerEnter(Collider other)
         {
             print("Trigger " + this + " firing");
             triggerEnterFunc.Invoke();
 
-            BasketCheck(other);
 
-            //Triggers the disabler, and feeds it useful information
-            Disabler(other.GetComponent<Transform>());
+            if (this.transform.parent.tag == "Basket")
+            {
+                BasketCheck(other);
+                particles.SetActive(true);
+
+                //Triggers the disabler, and feeds it useful information
+                Disabler(other.GetComponent<Transform>());
+            }
+
         }
 
         public void OnTriggerExit(Collider other)
