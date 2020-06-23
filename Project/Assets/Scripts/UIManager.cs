@@ -16,9 +16,11 @@ public class UIManager : MonoBehaviour
     private int printTextLines; //Current # of lines
 
     private bool isPaused;
-    public GameObject pauseMenu, startMenu;
+    public GameObject pauseMenu, startMenu, endMenu;
     public GameObject gameUI;
     public GameObject pauseButton, ballButton;
+
+    public GameObject endMenuText;
 
     //SINGLETON
     private static UIManager instance;
@@ -56,7 +58,7 @@ public class UIManager : MonoBehaviour
     //Update all ball texts
     public void UpdateBall()
     {
-        foreach (Text btext in ballTextList) btext.text = ("Balls left: <color=#41F86Aff>" + GameMan.Instance.ballCount.ToString() + "</color>");
+        foreach (Text btext in ballTextList) btext.text = ("Fruit left: <color=#41F86Aff>" + GameMan.Instance.ballCount.ToString() + "</color>");
     }
 
     //Update all timer texts
@@ -132,5 +134,38 @@ public class UIManager : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit(); //Oculus does not like this, treats it as a crash
+    }
+
+    //Function for end of game screen, will replace "nopause" functionally
+    public void EndScreen(int endType)
+    {
+        endMenu.SetActive(true);
+        Time.timeScale = 0;
+        isPaused = true;
+        if(endType == 0)
+        {
+            endMenuText.transform.GetChild(0).GetComponent<Text>().text = "You filled all the baskets!";
+        }
+        if (endType == 1)
+        {
+            endMenuText.transform.GetChild(0).GetComponent<Text>().text = "You ran out of fruit!";
+        }
+        if (endType == 2)
+        {
+            endMenuText.transform.GetChild(0).GetComponent<Text>().text = "You ran out of time!";
+        }
+
+        endMenuText.transform.GetChild(1).GetComponent<Text>().text = "With a score of " + GameMan.Instance.Score.ToString() + "...";
+        endMenuText.transform.GetChild(2).GetComponent<Text>().text = "In " + (Math.Round(GameMan.Instance.TimeElapsed, 2).ToString("f2")) + " seconds...";
+        endMenuText.transform.GetChild(3).GetComponent<Text>().text = "And " + GameMan.Instance.ballCount.ToString() + " fruit remaining!";
+    }
+
+    public void EndScreenRestart()
+    {
+        endMenu.SetActive(false);
+        gameUI.SetActive(true);
+        Time.timeScale = 1;
+        isPaused = false;
+        GameMan.Instance.Restart();
     }
 }

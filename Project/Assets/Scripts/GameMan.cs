@@ -71,7 +71,7 @@ public class GameMan : MonoBehaviour
         {
             if (ballfab && ballSpawn && ballCount <= 0)
             {
-                timeUp.Invoke(); //Invokes game end functions
+                UIManager.Instance.EndScreen(1); //Invokes game end functions
                 UIManager.Instance.PrintUI("<color=#ff0000ff>Out of balls!</color>");
                 return;
             }
@@ -101,7 +101,7 @@ public class GameMan : MonoBehaviour
         }
         else
         {
-            timeUp.Invoke(); //Invokes game end functions
+            UIManager.Instance.EndScreen(1); //Invokes game end functions
             UIManager.Instance.PrintUI("<color=#ff0000ff>Out of balls!</color>");
             return;
         }
@@ -175,7 +175,7 @@ public class GameMan : MonoBehaviour
         if (total == arrayOfBaskets.Length)
         {
             // end game
-            timeUp.Invoke();
+            UIManager.Instance.EndScreen(0);
         }
 
         // reset total for checking again
@@ -213,7 +213,8 @@ public class GameMan : MonoBehaviour
             
             if(Timer()) //Check if time has reached the limit
             {
-                timeUp.Invoke(); //Run game end event
+                //timeUp.Invoke(); //Run game end event
+                UIManager.Instance.EndScreen(2);
             }
         }
     }
