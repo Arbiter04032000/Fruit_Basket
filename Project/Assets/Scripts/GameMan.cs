@@ -76,6 +76,8 @@ public class GameMan : MonoBehaviour
                 return;
             }
             ball.SetPositionAndRotation(ballSpawn.position, ballSpawn.rotation); //Reset ball to spawnpoint
+            ball.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero; //Reset ball velocity; prevents weirdness
+            ball.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero; //Same as above
             --ballCount; //Ticks down ball counter
             UIManager.Instance.UpdateBall(); //Updates counter in UI
             ball.GetComponentInChildren<ParticleSystem>().Play(); //Plays particle FX
@@ -170,7 +172,7 @@ public class GameMan : MonoBehaviour
         //Debug.Log("Baskets " + total);
 
         // if total equal to amount of baskets
-        if (total == arrayOfBaskets.Length - 1)
+        if (total == arrayOfBaskets.Length)
         {
             // end game
             timeUp.Invoke();
@@ -192,6 +194,7 @@ public class GameMan : MonoBehaviour
     {
         if(time >= timeLimit) //If it reaches the time limit, triggers game end
         {
+            checkForWin();
             gameEnd = true;
             time = timeLimit;
             return true;
