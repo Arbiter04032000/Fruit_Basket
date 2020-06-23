@@ -6219,10 +6219,10 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 8782268e8fb15324d8f5fec4ab1c61e8, type: 2}
   colourMatsStored: []
   fruitUsedMats:
-  - {fileID: 2100000, guid: f81218888f8e796449025b4420d0f335, type: 2}
-  - {fileID: 2100000, guid: 25140886f2eb09f4185597da9c99b4cc, type: 2}
-  - {fileID: 2100000, guid: 4f3c57a565ee51540bd3a995d5801982, type: 2}
-  - {fileID: 2100000, guid: e08b85ecd8ec7f24aaed87fb6565601c, type: 2}
+  - {fileID: 2100000, guid: f102bae34894038469ceba3141e04381, type: 2}
+  - {fileID: 2100000, guid: 738c0e1c5a7da1d4db1c54dbb7c8d9a7, type: 2}
+  - {fileID: 2100000, guid: ef3efaf5620feac428f162094896b783, type: 2}
+  - {fileID: 2100000, guid: fe40ff9aa3ab45c4ab39abee9d3d3f6b, type: 2}
   defaultMat: {fileID: 2100000, guid: f607cfce65bf95a4a838ffa5330606ae, type: 2}
   basketMatGood: {fileID: 2100000, guid: f607cfce65bf95a4a838ffa5330606ae, type: 2}
   basketMatBad: {fileID: 2100000, guid: ccd56c2ed25c0204fbfa3437eae226cc, type: 2}

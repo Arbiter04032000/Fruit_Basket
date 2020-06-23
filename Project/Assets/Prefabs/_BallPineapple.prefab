@@ -312,7 +312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fruitTag: 
   scored: 0
-  fruitMatUsed: {fileID: 2100000, guid: e08b85ecd8ec7f24aaed87fb6565601c, type: 2}
+  fruitMatUsed: {fileID: 2100000, guid: fe40ff9aa3ab45c4ab39abee9d3d3f6b, type: 2}
 --- !u!1 &3974653263290866687
 GameObject:
   m_ObjectHideFlags: 0
@@ -5125,7 +5125,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 67a18a03f80691947ac5e3b4447edc6c, type: 2}
+  - {fileID: 2100000, guid: ef3efaf5620feac428f162094896b783, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

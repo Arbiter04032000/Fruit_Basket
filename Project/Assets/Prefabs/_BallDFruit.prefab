@@ -247,7 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fruitTag: 
   scored: 0
-  fruitMatUsed: {fileID: 2100000, guid: 4f3c57a565ee51540bd3a995d5801982, type: 2}
+  fruitMatUsed: {fileID: 2100000, guid: ef3efaf5620feac428f162094896b783, type: 2}
 --- !u!1 &3999660358647519005
 GameObject:
   m_ObjectHideFlags: 0
@@ -5083,7 +5083,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4d415e3e142d07142bfd92dc14138d3c, type: 2}
+      objectReference: {fileID: 2100000, guid: 738c0e1c5a7da1d4db1c54dbb7c8d9a7, type: 2}
     - target: {fileID: -927199367670048503, guid: e7b7cbe1e89933d4aacb41ee96c08017,
         type: 3}
       propertyPath: m_Name
