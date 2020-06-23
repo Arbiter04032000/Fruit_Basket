@@ -88,7 +88,7 @@ public class GameMan : MonoBehaviour
     public void NewBall() //Function for spawning a new ball, instead of tping the current one
     {
         UIManager.Instance.UpdateScore();
-        if (ballfab && ballSpawn && ballCount >= 0)
+        if (ballfab && ballSpawn && ballCount > 0)
         {
             Debug.Log(ballCount);
             AssignFruitPrefab();
