@@ -134,17 +134,18 @@ public class ColourManager : MonoBehaviour
                     if (i == 0)
                     {
                         arrayOfBaskets[j].gameObject.GetComponent<TagContainer>().fruitTag = "Apple";
-                        //arrayOfBaskets[j].GetComponent<TagContainer>().fruitTag = "Apple";
                     }
                     if (i == 1)
                     {
                         arrayOfBaskets[j].gameObject.GetComponent<TagContainer>().fruitTag = "Grape";
-                        //arrayOfBaskets[j].GetComponent<TagContainer>().fruitTag = "Grape";
                     }
                     if (i == 2)
                     {
                         arrayOfBaskets[j].gameObject.GetComponent<TagContainer>().fruitTag = "DFruit";
-                        //arrayOfBaskets[j].GetComponent<TagContainer>().fruitTag = "DFruit";
+                    }
+                    if (i == 3)
+                    {
+                        arrayOfBaskets[i].gameObject.GetComponent<TagContainer>().fruitTag = "Pineapple";
                     }
                 }
             }

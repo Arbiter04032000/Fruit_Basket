@@ -17,7 +17,7 @@ public class GameMan : MonoBehaviour
     public float timeLimit = 10f; //Seconds for forced gameend
     public UnityEvent timeUp;
     public int ballMax, ballCount;
-    public GameObject grapePrefab, applePrefab, dFruitPrefab;
+    public GameObject grapePrefab, applePrefab, dFruitPrefab, pineapplePrefab;
 
 
 
@@ -113,6 +113,7 @@ public class GameMan : MonoBehaviour
     /// Index 0: Apple
     /// Index 1: Grape
     /// Index 2: DFruit
+    /// Index 3: Pineapple
     /// </summary>
     private void AssignFruitPrefab()
     {
@@ -123,6 +124,7 @@ public class GameMan : MonoBehaviour
         Material appleMaterial = ColourManager.Instance.colourMatsStored[0];
         Material grapesMaterial = ColourManager.Instance.colourMatsStored[1];
         Material dFruitMaterial = ColourManager.Instance.colourMatsStored[2];
+        Material pineappleMaterial = ColourManager.Instance.colourMatsStored[3];
 
         if (basketMaterial == appleMaterial)
         {
@@ -135,6 +137,10 @@ public class GameMan : MonoBehaviour
         else if(basketMaterial == dFruitMaterial)
         {
             ballfab = dFruitPrefab;
+        }
+        else if (basketMaterial == pineappleMaterial)
+        {
+            ballfab = pineapplePrefab;
         }
     }
 
